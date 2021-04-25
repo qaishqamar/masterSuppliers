@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/grey_10"
+    >
+    <RelativeLayout
+        android:id="@+id/userdetail_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <RelativeLayout
+            android:id="@+id/user_lauot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:id="@+id/static_user_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Total User"/>
+
+            <TextView
+                android:id="@+id/user_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/static_user_total"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_lauot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+           android:layout_toEndOf="@+id/user_lauot2">
+
+            <TextView
+                android:id="@+id/static_dealer_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Total User"/>
+
+            <TextView
+                android:id="@+id/dealer_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/static_dealer_total"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/advertise_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:background="@android:color/white"
+
+        android:layout_below="@+id/userdetail_layout_main">
+        <TextView
+            android:id="@+id/static_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:text="Ads Details:"/>
+        <RelativeLayout
+            android:id="@+id/ads_layout2"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/static_title"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/grey_20"
+            android:padding="10dp"
+           >
+
+            <TextView
+                android:id="@+id/statica_active_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Total User"/>
+
+            <TextView
+                android:id="@+id/user_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statica_active_ads"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ads_layout3"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/static_title"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/ads_layout2"
+            android:padding="10dp"
+            android:background="@color/grey_20"
+
+           >
+
+            <TextView
+                android:id="@+id/statica_expire_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Total User"/>
+
+            <TextView
+                android:id="@+id/expire_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statica_expire_ads"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+
+        android:layout_below="@+id/advertise_layout">
+        <TextView
+            android:id="@+id/tips_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:text="Tips Details:"/>
+        <TextView
+            android:id="@+id/tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tips_title"
+            android:text="No of tips :"/>
+        <TextView
+            android:id="@+id/tips_text_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tips_title"
+            android:layout_toRightOf="@+id/tips_text"
+            android:text="05"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vehicles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+
+        android:layout_below="@+id/tips_layout">
+        <TextView
+            android:id="@+id/vehicles_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:text="Vehicles Details:"/>
+        <TextView
+            android:id="@+id/vehicles_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/vehicles_title"
+            android:text="No of vehicles :"/>
+        <TextView
+            android:id="@+id/vehicles_text_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/vehicles_title"
+            android:layout_toRightOf="@+id/vehicles_text"
+            android:text="05"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
