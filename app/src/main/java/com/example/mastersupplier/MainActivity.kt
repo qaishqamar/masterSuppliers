@@ -24,13 +24,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    override fun onStart() {
-//        super.onStart()
-//        val auth=Firebase.auth
-//        if(auth.currentUser==null){
-//            startActivity(Intent(this,LoginActivity::class.java))
-//        }
-//
-//    }
+    override fun onStart() {
+        super.onStart()
+        val auth=Firebase.auth
+        if(auth.currentUser==null){
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
+
+    }
 
 }
